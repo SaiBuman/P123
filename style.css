@@ -1,0 +1,32 @@
+.heading {
+   font-size: 25px;
+   width: 100%;
+   margin: 0px;
+   box-shadow: 5px 5px 5px gray;
+   background-color: cadetblue;
+}
+
+.note {
+    color: #000000;
+    font-size: 15px;
+}
+
+.copy_right_footer {
+    position: fixed ;
+    bottom: 0;
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+    line-height: 2;
+    background-color: cadetblue;
+}
+canvas,video {
+    border: 3px groove #ef1641;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 10px dimgray ;
+}
+
+body {
+    background-color: burlywood;
+}
