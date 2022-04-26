@@ -9,7 +9,7 @@
      }
 
      function draw() {
-        background("#4a875b");  
+        background("#70d2ff");  
      }
 
      function modelLoaded() {
