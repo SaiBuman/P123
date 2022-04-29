@@ -3,7 +3,6 @@
    width: 100%;
    margin: 0px;
    box-shadow: 5px 5px 5px gray;
-   background-color: cadetblue;
 }
 
 .note {
@@ -19,14 +18,10 @@
     width: 100%;
     text-align: center;
     line-height: 2;
-    background-color: cadetblue;
+    background-color: cornflowerblue;
 }
 canvas,video {
     border: 3px groove #ef1641;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 10px dimgray ;
-}
-
-body {
-    background-color: burlywood;
 }

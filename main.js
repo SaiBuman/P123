@@ -1,3 +1,11 @@
+nose_x = "" ;
+nose_y = "" ;
+
+left_wrist_x = "" ;
+right_wrist_x = "" ;
+
+difference = "" ;
+
  function setup() {
      canvas = createCanvas(400,400);
      canvas.position(800,125);
@@ -9,7 +17,11 @@
      }
 
      function draw() {
-        background("#70d2ff");  
+        background("#4a875b");  
+        fill("#fa483e");
+        stroke("fa483e");
+        square(nose_x,nose_y,difference);
+        document.getElementById("square_sides").innerHTML = "The size of the square is "+ difference +" px"
      }
 
      function modelLoaded() {
@@ -19,5 +31,11 @@
      function gotPoses(results) {
          if (results.length>0) {
              console.log(results);
+             nose_x = results[0].pose.nose.x;
+             nose_y = results[0].pose.nose.y;
+
+             left_wrist_x = results[0].pose.leftWrist.x;
+             right_wrist_x = results[0].pose.rightWrist.y;
+             difference = floor(left_wrist_x - right_wrist_x);
          }
      }
