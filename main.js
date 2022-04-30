@@ -16,14 +16,6 @@ difference = "" ;
      poseNet.on("pose",gotPoses)
      }
 
-     function draw() {
-        background("#4a875b");  
-        textSize(difference);
-        fill("#f9ffc4");
-        text('MSBuman Coder',nose_x,nose_y);
-        document.getElementById("square_sides").innerHTML = "The font size of the text is "+ difference +" px"
-     }
-
      function modelLoaded() {
          console.log("Model is Loaded");
      }
@@ -38,4 +30,12 @@ difference = "" ;
              right_wrist_x = results[0].pose.rightWrist.y;
              difference = floor(left_wrist_x - right_wrist_x);
          }
+     }
+
+     function draw() {
+        background("#4a875b");  
+        textSize(difference);
+        fill("#f9ffc4");
+        text('MSBuman Coder',nose_x,nose_y);
+        document.getElementById("square_sides").innerHTML = "The font size of the text is "+ difference +" px"
      }
