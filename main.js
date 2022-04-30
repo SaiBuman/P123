@@ -18,10 +18,10 @@ difference = "" ;
 
      function draw() {
         background("#4a875b");  
-        fill("#fa483e");
-        stroke("fa483e");
-        square(nose_x,nose_y,difference);
-        document.getElementById("square_sides").innerHTML = "The size of the square is "+ difference +" px"
+        textSize(differnce);
+        fill("#f9ffc4");
+        text('MSBuman Coder',nose_x,nose_y);
+        document.getElementById("square_sides").innerHTML = "The font size of the text is "+ difference +" px"
      }
 
      function modelLoaded() {
