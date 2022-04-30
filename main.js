@@ -18,7 +18,7 @@ difference = "" ;
 
      function draw() {
         background("#4a875b");  
-        textSize(differnce);
+        textSize(difference);
         fill("#f9ffc4");
         text('MSBuman Coder',nose_x,nose_y);
         document.getElementById("square_sides").innerHTML = "The font size of the text is "+ difference +" px"
